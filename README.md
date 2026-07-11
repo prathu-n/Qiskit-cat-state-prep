@@ -16,23 +16,16 @@ The primary objective is to implement a variational state preparation algorithm 
 
 A bosonic mode has an infinite-dimensional Hilbert space
 
-[
+
 {|0\rangle, |1\rangle, |2\rangle, \ldots},
-]
+
 
 making it fundamentally different from a two-level qubit.
 
 A cat state is a coherent superposition of two coherent states,
 
-[
-|C_\alpha^\pm\rangle =
-N_\pm
-\left(
-|\alpha\rangle
-\pm
-|-\alpha\rangle
-\right),
-]
+
+|C_\alpha^\pm\rangle = N_\pm \left( \alpha\rangle \pm |-\alpha\rangle \right),
 
 where (\alpha) is the coherent state amplitude and (N_\pm) is a normalization factor.
 
@@ -61,16 +54,15 @@ The infinite-dimensional oscillator is truncated to the first N Fock states.
 
 These basis states are then mapped onto
 
-[
 \lceil \log_2 N \rceil
-]
 
 qubits.
 
 For example,
 
-0\rangle) \rightarrow  000 \\
-1\rangle) \rightarrow  001 \\ ...
+|0\rangle) \rightarrow  000 \\
+|1\rangle) \rightarrow  001 \\
+|2\rangle) \rightarrow  010 \\
 
 
 
@@ -85,27 +77,9 @@ A parameterized quantum circuit is constructed using Qiskit.
 
 Circuit parameters are optimized using a classical optimizer to maximize
 
-[
-F
-=
+F = |\langle\psi_{\mathrm{target}} |\psi(\theta)\rangle|^2,
 
-|\langle\psi_{\mathrm{target}}
-|
-\psi(\theta)\rangle|^2,
-]
-
-where
-
-* (\psi_{\mathrm{target}}) is the truncated cat state,
-* (\psi(\theta)) is the variational state.
-
-
-## Software
-
-* Python
-* Qiskit
-* NumPy
-* Matplotlib
+where (\psi_{\mathrm{target}}) is the truncated cat state, and (\psi(\theta)) is the variational state.
 
 
 ## References
