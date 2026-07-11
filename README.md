@@ -25,7 +25,7 @@ making it fundamentally different from a two-level qubit.
 A cat state is a coherent superposition of two coherent states,
 
 
-|C_\alpha^\pm\rangle = N_\pm \left( \alpha\rangle \pm |-\alpha\rangle \right),
+|\alpha^\pm\rangle = N_\pm \left( \alpha\rangle \pm |-\alpha\rangle \right),
 
 where (\alpha) is the coherent state amplitude and (N_\pm) is a normalization factor.
 
